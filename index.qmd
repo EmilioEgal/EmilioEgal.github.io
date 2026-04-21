@@ -1,5 +1,5 @@
 ---
-title: Alain Danet
+title: Emilio Egal
 image: img/alain_capybara_tanya.png
 alt-image: ""
 about:
