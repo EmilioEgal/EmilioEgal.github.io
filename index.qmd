@@ -1,6 +1,6 @@
 ---
 title: Emilio Egal
-image: img/emilio_profile_photo.JPG
+image: about/emilio_photo_profile.JPG
 alt-image: ""
 about:
   template: trestles

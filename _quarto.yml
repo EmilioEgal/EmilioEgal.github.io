@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  favicon: img/dna_logo.png
+  favicon: about/dna_logo.svg
   title: "Emilio Egal"
   navbar:
     left:
