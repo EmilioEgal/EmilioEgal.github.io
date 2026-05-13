@@ -1,20 +1,296 @@
 ---
 title: "About"
 ---
+```{=html}
+<style>
+/* ── Gallery grid ── */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
 
-# Education
+.gallery-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 2.5rem 0 0.75rem 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #ddd;
+}
 
-- 2017 | PhD in Biodiversity & Ecology | University of Montpellier
-- 2014 | Master in Evolutionary Biology and Ecology | University of Montpellier
-- 2012 | BSc in Population Biology | University of Western Brittany
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  background: #eee;
+}
 
-# Experience
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
 
-- 2025 - | Permanent researcher | INRAE
-- 2022 - 2025 | Post-doc | University of Sheffield
-- 2021 - 2022 | Post-doc | Illinois State University
-- 2018 - 2021 | Post-doc | Natural History Museum of Paris
-- 2014 - 2017 | PhD in Biodiversity & Ecology | University of Montpellier
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
 
+/* ── Lightbox ── */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
 
-This website has been generated using the fantastic documentation of [quarto](https://quarto.org/docs/websites/).
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 78vh;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.lightbox-caption {
+  color: #e8e8e8;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.lightbox-close:hover { opacity: 1; }
+
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.12);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+.lightbox-nav.prev { left: 1rem; }
+.lightbox-nav.next { right: 1rem; }
+
+@media (max-width: 768px) {
+  .photo-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+
+<!-- ── BIRDS ── -->
+<p class="gallery-section-title">🐦 Birds</p>
+<div class="photo-gallery">
+  <div class="gallery-item" onclick="openLightbox(0)">
+    <img src="about/me_and_brownnoddy.JPG" alt="Me and a brown noddy" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(1)">
+    <img src="about/me_lookingatbird.jpg" alt="Observing birds in the field" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(2)">
+    <img src="about/save_chick_bird.jpg" alt="Saving a chick" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(3)">
+    <img src="about/me_and_whitetailedtropicbird.jpg" alt="White-tailed tropicbird" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(4)">
+    <img src="about/fairytern_and_pisonia.jpg" alt="Fairy tern and pisonia tree" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(5)">
+    <img src="about/seychellesmagpierobin.jpg" alt="Seychelles magpie-robin" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(6)">
+    <img src="about/tropical_shearwater_chick.jpg" alt="Tropical shearwater chick" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(7)">
+    <img src="about/white_tailedtropicbird_adultandchick.jpg" alt="White-tailed tropicbird adult and chick" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(8)">
+    <img src="about/whitetailedtropicbird_chick.jpg" alt="White-tailed tropicbird chick" loading="lazy">
+  </div>
+</div>
+
+<!-- ── TURTLES ── -->
+<p class="gallery-section-title">🐢 Sea Turtles</p>
+<div class="photo-gallery">
+  <div class="gallery-item" onclick="openLightbox(9)">
+    <img src="about/hawksbill turtle.jpg" alt="Hawksbill turtle" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(10)">
+    <img src="about/hawksbill_turtle.jpg" alt="Hawksbill turtle close-up" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(11)">
+    <img src="about/hawksbillturtle_and_lizard.jpg" alt="Hawksbill turtle and lizard" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(12)">
+    <img src="about/monitoring_hackswbillturtle.jpg" alt="Monitoring hawksbill turtles" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(13)">
+    <img src="about/me_and_giantaldabratortoise.jpg" alt="Me and a giant Aldabra tortoise" loading="lazy">
+  </div>
+</div>
+
+<!-- ── Me ── -->
+<p class="gallery-section-title">🔬 Me </p>
+<div class="photo-gallery">
+  <div class="gallery-item" onclick="openLightbox(14)">
+    <img src="about/nowpas_oral.jpeg" alt="Oral presentation at NOWPAS" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(15)">
+    <img src="about/ecology_andbehaviour.jpg" alt="Ecology and Behaviour conference" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(16)">
+    <img src="about/eseb_poster.jpeg" alt="ESEB poster session" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(17)">
+    <img src="about/cours_instituagro.jpeg" alt="Teaching at Institut Agro" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(18)">
+    <img src="about/fieldwork_boat_niskin.JPG" alt="Field work — Niskin bottle sampling" loading="lazy">
+  </div>
+  <div class="gallery-item" onclick="openLightbox(19)">
+    <img src="about/monitoring_cetaceans.jpg" alt="Monitoring cetaceans" loading="lazy">
+  </div>
+   <div class="gallery-item" onclick="openLightbox(20)">
+    <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+      <source src="about/Emilio Egal, décoder le comportement des saumons face au climat.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<!-- ── Lightbox overlay ── -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightboxOnBg(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav prev" onclick="navigateLightbox(-1)">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+  <button class="lightbox-nav next" onclick="navigateLightbox(1)">&#8250;</button>
+</div>
+
+<script>
+const photos = [
+  // Birds
+  { src: "about/me_and_brownnoddy.JPG",                    caption: "With a brown noddy (Anous stolidus) — an unforgettable encounter on Aride Island, Seychelles." },
+  { src: "about/me_lookingatbird.jpg",                     caption: "Behavioural observation of seabirds during my volunteer research stay in Seychelles (2020–2021)." },
+  { src: "about/save_chick_bird.jpg",                      caption: "Helping to ring a Seychelles Magpie robin chick" },
+  { src: "about/me_and_whitetailedtropicbird.jpg",         caption: "Saving a white-tailed tropicbird (Phaethon lepturus) from bird-catcher tree (Pisonia grandis) seeds" },
+  { src: "about/fairytern_and_pisonia.jpg",                caption: "White fairy tern (Gygis alba) with bird-catcher tree (Pisonia grandis) seeds" },
+  { src: "about/seychellesmagpierobin.jpg",                caption: "The Seychelles magpie-robin (Copsychus sechellarum), a critically endangered species (was once one of the rarest birds in the world)"},
+  { src: "about/tropical_shearwater_chick.jpg",            caption: "Tropical shearwater chick (Puffinus bailloni) — seen during a census monitoring" },
+  { src: "about/white_tailedtropicbird_adultandchick.jpg", caption: "Adult and chick of white-tailed tropicbird (Phaethon lepturus)" },
+  { src: "about/whitetailedtropicbird_chick.jpg",          caption: "White-tailed tropicbird chick" },
+  // Turtles
+  { src: "about/hawksbill turtle.jpg",                     caption: "Hawksbill sea turtle (Eretmochelys imbricata) laying eggs" },
+  { src: "about/hawksbill_turtle.jpg",                     caption: "Back to ocean !" },
+  { src: "about/hawksbillturtle_and_lizard.jpg",           caption: "An unlikely encounter: a hawksbill turtle and a skink above its shell" },
+  { src: "about/monitoring_hackswbillturtle.jpg",          caption: "Hawksbill turtle monitoring — biometric measurements and tagging operations." },
+  { src: "about/me_and_giantaldabratortoise.jpg",          caption: "With a giant Aldabra tortoise (Aldabrachelys gigantea)" },
+  // Science & Teaching
+  { src: "about/nowpas_oral.jpeg",                         caption: "Oral presentation at the NOWPAS Workshop (Hólar, Iceland, February 2026) on fine-scale genetic structure in Atlantic salmon." },
+  { src: "about/ecology_andbehaviour.jpg",                 caption: "17th Ecology & Behaviour Conference (Montpellier, August 2025) — talk on reproductive success of dispersers in Atlantic salmon." },
+  { src: "about/eseb_poster.jpeg",                         caption: "Poster session at the European Society for Evolutionary Biology congress (ESEB, Barcelona, August 2025)." },
+  { src: "about/cours_instituagro.jpeg",                   caption: "Teaching at Institut Agro Rennes" },
+  { src: "about/fieldwork_boat_niskin.JPG",                caption: "At-sea sampling with a Niskin bottle during my Master 1" },
+  { src: "about/monitoring_cetaceans.jpg",                caption: "Cetacean monitoring off the coast of Mallorca during my internship at Tursiops Marine Research (2022)." },
+  { src: "about/Emilio Egal, décoder le comportement des saumons face au climat.mp4", caption: "Video interview — Decoding salmon behaviour facing climate change (INRAE, 2025).", isVideo: true },
+];
+
+let currentIndex = 0;
+
+function openLightbox(index) {
+  currentIndex = index;
+  updateLightbox();
+  document.getElementById("lightbox").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function updateLightbox() {
+  const photo = photos[currentIndex];
+  const img = document.getElementById("lightbox-img");
+  let videoEl = document.getElementById("lightbox-video");
+
+  if (photo.isVideo) {
+    img.style.display = "none";
+    if (!videoEl) {
+      videoEl = document.createElement("video");
+      videoEl.id = "lightbox-video";
+      videoEl.controls = true;
+      videoEl.style.cssText = "max-width:90vw;max-height:78vh;border-radius:8px;";
+      img.parentNode.insertBefore(videoEl, img);
+    }
+    videoEl.src = photo.src;
+    videoEl.style.display = "block";
+    videoEl.play();
+  } else {
+    img.style.display = "block";
+    img.src = photo.src;
+    img.alt = photo.caption;
+    if (videoEl) { videoEl.pause(); videoEl.style.display = "none"; }
+  }
+
+  document.getElementById("lightbox-caption").textContent = photo.caption;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+  document.body.style.overflow = "";
+  const videoEl = document.getElementById("lightbox-video");
+  if (videoEl) videoEl.pause();
+}
+
+function closeLightboxOnBg(event) {
+  if (event.target === document.getElementById("lightbox")) closeLightbox();
+}
+
+function navigateLightbox(dir) {
+  currentIndex = (currentIndex + dir + photos.length) % photos.length;
+  updateLightbox();
+}
+
+document.addEventListener("keydown", (e) => {
+  const lb = document.getElementById("lightbox");
+  if (!lb.classList.contains("active")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowRight") navigateLightbox(1);
+  if (e.key === "ArrowLeft") navigateLightbox(-1);
+});
+</script>
+```

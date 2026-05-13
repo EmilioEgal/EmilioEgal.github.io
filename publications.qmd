@@ -2,45 +2,14 @@
 title: "Publications"
 ---
 
-You can retrieve all my publications on [google
-scholar](https://scholar.google.com/citations?user=iijI6msAAAAJ&hl=en) and
-[research gate](https://www.researchgate.net/profile/Alain-Danet).
+You can retrieve my publications on [google
+scholar](https://scholar.google.com/citations?user=6egnV8QAAAAJ&hl=fr) and
+[research gate](https://www.researchgate.net/profile/Emilio-Egal-2).
 
 ## Selected publications
 
-1. **Bonnaffé, W.**, **Danet, A.**, **Leclerc, C.**, Froissard, V., Edeline, E., & Sentis, A. (2024).
-   *The interaction between warming and enrichment accelerates food-web simplification in freshwater systems.*
-   **Ecology Letters**, 27, e14480. [doi.org/10.1111/ele.14480](https://doi.org/10.1111/ele.14480)
-
-   **Featured in numerous outlets such as:**
-   [*Sheffield University News*](https://www.sheffield.ac.uk/news/warming-water-temperatures-and-increased-nutrient-levels-are-putting-freshwater-ecosystems-serious),
-   [*INRAE news*](https://www.inrae.fr/en/news/warming-and-nutrient-enrichment-combined-effects-freshwater-systems),
-   [*The Guardian*](https://www.theguardian.com/environment/article/2024/aug/30/aquatic-life-under-threat-as-pollution-and-warmer-waters-wreak-havoc),
-   [*The Star Sheffield*](https://www.thestar.co.uk/news/environment/sheffield-university-river-pollution-warming-waters-dangerous-combination-4745090), [*Notre environnement* (french gov)](https://www.notre-environnement.gouv.fr/actualites/breves/article/une-etude-de-l-inrae-montre-les-effets-du-rechauffement-et-de-l-exces-de).
-
-1. **Danet, A.**, Bautista, S., Génin, A., Beckerman, A. P., Anthelme, F., & Kéfi, S. (2024).
-   *Species diversity promotes facilitation under stressful conditions.*
-   **Oikos**, e10303. [doi.org/10.1111/oik.10303](https://doi.org/10.1111/oik.10303)
-
-   **Featured in:** [*CNRS News*](https://www.inee.cnrs.fr/fr/cnrsinfo/des-plantes-facilitatrices-participent-au-maintien-de-la-biodiversite-en-cas-de-secheresse),
-   [*France Culture*](https://www.radiofrance.fr/franceculture/podcasts/avec-sciences/avec-sciences-chronique-du-mercredi-19-juin-2024-9213205)  (french national radio),
-   [*IRD Le Mag'*](https://lemag.ird.fr/en/drylands-greater-plant-diversity-increases-mutual-benefits-species) (outlet of the Research Institute for development),
-   [*Radio Campus Montpellier*](https://www.radiocampusmontpellier.fr/podcast/stimuli-06-03-2025/) (University radio),
-   [*Notre environnement (french gov)*](https://www.notre-environnement.gouv.fr/actualites/breves/article/en-zones-arides-des-plantes-necessaires-a-la-survie-des-especes-vegetales).
-
-
-1. **Danet, A.**, Giam, X., Olden, J. D., & Comte, L. (2024).
-   *Past and recent anthropogenic pressures drive rapid changes in riverine fish communities.*
-   **Nature Ecology & Evolution** [doi.org/10.1038/s41559-023-02271-x](https://doi.org/10.1038/s41559-023-02271-x)
-
-   Featured in [*Nature News & Views*](https://doi.org/10.1038/s41559-024-02328-5),
-   and [*Newsweek*](https://www.newsweek.com/american-rivers-filling-invasive-fish-threat-1871205).
-
-1. **Danet, A.**, Mouchet, M., Bonnaffé, W., Thébault, E., & Fontaine, C. (2021).
-   *Species richness and food-web structure jointly drive community biomass and its temporal stability in fish communities.*
-   **Ecology Letters**, 24(11), 2364–2377. [doi.org/10.1111/ele.13857](https://doi.org/10.1111/ele.13857)
-
-   Featured in [*Faculty Opinions*](https://doi.org/10.3410/f.740718442.793588374).
-
+1. **Egal E**, Perrier C, Czorlich Y, Bolstad G, Primmer CR, Manicki A, Elso J, Evanno G, Buoro M (2026).
+   *Selection against dispersers: sex, age and origin-dependent fitness differences in wild Atlantic salmon.*
+   **Proc. R. Soc. B** 293: 20253260. [doi.org/10.1098/rspb.2025.3260](https://doi.org/10.1098/rspb.2025.3260)
 
 

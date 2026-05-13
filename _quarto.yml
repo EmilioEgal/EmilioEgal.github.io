@@ -3,21 +3,24 @@ project:
   output-dir: docs
 
 website:
-  favicon: img/logo.png
-  title: "Alain Danet"
+  favicon: img/dna_logo.png
+  title: "Emilio Egal"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: project.qmd
         text: Research projects
+      - href: CV.qmd
+        text: CV
       - href: publications.qmd
+        text: Publications
       - about.qmd
   page-footer:
-    left: "Copyright 2025, Alain Danet"
+    left: "Copyright 2026, Emilio Egal"
     right:
       - icon: github
-        href: https://github.com/alaindanet
+        href: https://github.com/EmilioEgal
 
 format:
   html:

@@ -1,0 +1,213 @@
+/* ===========================
+   CV Page — Emilio Egal
+   =========================== */
+
+/* Download button */
+.cv-header-actions {
+  margin-bottom: 2.5rem;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background-color: #01696f;
+  color: #fff !important;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: background 0.18s ease;
+}
+
+.btn-download:hover {
+  background-color: #0c4e54;
+}
+
+/* ===========================
+   Timeline
+   =========================== */
+.timeline {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: #dcd9d5;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.75rem;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #01696f;
+  z-index: 1;
+}
+
+.timeline-dot.accent {
+  background: #01696f;
+}
+
+.timeline-dot.highlight {
+  background: #4f98a3;
+  border-color: #4f98a3;
+}
+
+.timeline-date {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #01696f;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.15rem 0;
+  color: #28251d;
+}
+
+.timeline-place {
+  font-size: 0.88rem;
+  color: #7a7974;
+  font-style: italic;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-content p {
+  font-size: 0.92rem;
+  color: #4a4742;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Teaching table */
+.teaching-table {
+  margin-top: 0.75rem;
+}
+
+.teaching-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.teaching-table th {
+  text-align: left;
+  font-weight: 600;
+  color: #28251d;
+  border-bottom: 2px solid #dcd9d5;
+  padding: 0.35rem 0.75rem 0.35rem 0;
+}
+
+.teaching-table td {
+  padding: 0.3rem 0.75rem 0.3rem 0;
+  border-bottom: 1px solid #efefed;
+  color: #4a4742;
+}
+
+/* ===========================
+   Skills Grid
+   =========================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skill-card {
+  background: #f9f8f5;
+  border: 1px solid #dcd9d5;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+.skill-card h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #01696f;
+  margin-bottom: 0.6rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tags span {
+  background: #cedcd8;
+  color: #0c4e54;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .timeline-logo { opacity: 0.7; filter: grayscale(20%) brightness(1.1); }
+  .timeline::before { background: #393836; }
+  .timeline-dot { background: #1c1b19; border-color: #4f98a3; }
+  .timeline-dot.accent { background: #4f98a3; }
+  .timeline-date { color: #4f98a3; }
+  .timeline-content h3 { color: #cdccca; }
+  .timeline-place { color: #797876; }
+  .timeline-content p { color: #9e9d9b; }
+  .teaching-table th { color: #cdccca; border-bottom-color: #393836; }
+  .teaching-table td { color: #9e9d9b; border-bottom-color: #2d2c2a; }
+  .skill-card { background: #1c1b19; border-color: #393836; }
+  .skill-card h4 { color: #4f98a3; }
+  .skill-tags span { background: #313b3b; color: #a0cdd1; }
+  .btn-download { background: #4f98a3; }
+  .btn-download:hover { background: #227f8b; }
+}
+
+/* Logos institutionnels */
+.timeline-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.timeline-logo {
+  height: 40px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  opacity: 0.85;
+  filter: grayscale(15%);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .skills-grid { grid-template-columns: 1fr; }
+  .timeline { padding-left: 1.25rem; }
+}

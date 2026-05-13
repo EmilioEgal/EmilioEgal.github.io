@@ -1,42 +1,31 @@
 ---
 title: Emilio Egal
-image: img/alain_capybara_tanya.png
+image: img/emilio_profile_photo.JPG
 alt-image: ""
 about:
   template: trestles
   id: hero-heading
   links:
-    - icon: mailbox
-      text: Mail
-      href: mailto:alain.danet@inrae.fr
-    - icon: google
-      text: Scholar
-      href: https://scholar.google.com/citations?user=iijI6msAAAAJ&hl=en
-    - icon: github
-      text: Github
-      href: https://github.com/alaindanet
+  - icon: envelope
+    text: "Mail"
+    href: mailto:emilio.egal@inrae.fr
+  - text: "{{< ai google-scholar >}} Google Scholar"
+    href: https://scholar.google.com/citations?user=6egnV8QAAAAJ&hl=fr
+  - text: "{{< ai researchgate >}} ResearchGate"
+    href: https://www.researchgate.net/profile/Emilio-Egal-2
+  - icon: github
+    text: "Github"
+    href: https://github.com/EmilioEgal 
 ---
 
 :::{#hero-heading}
 
-I work as an INRAE researcher in [DECOD lab](https://www.umr-decod.fr/en) at Rennes in France.
+Hello! I'm a PhD candidate in [DECOD lab](https://www.umr-decod.fr/en) at Rennes in France.
 
-My research aims to understand how anthropogenic pressures alter ecological
-communities and ultimately disrupt ecosystem functioning. This is a complex
-challenge because community responses emerge from both the diversity of
-species-specific reactions to environmental changes and the intricate networks
-of interactions among species. My work integrates these interaction networks
-into theoretical and applied ecology to address a central question: How do
-species interactions mediate the effects of environmental pressures on
-ecological systems—particularly in community assembly, ecosystem functioning,
-and stability?
+My work sits at the intersection of evolutionary genetics, population genomics, and conservation biology — with Atlantic salmon (*Salmo salar*) as a model.
 
-You can have a look at my [research projects](project.html) and my
-[publications](publications.html). You can also retrieve my work on [google
-scholar](https://scholar.google.com/citations?user=iijI6msAAAAJ&hl=en) and
-[research gate](https://www.researchgate.net/profile/Alain-Danet).
+Outside the lab, you'll find me doing mostly sports: running 🏃 , going to the gym 🏋️, diving/snorkeling 🤿, hiking with a bivouac ⛺, or playing padel.🥎 
 
-You can reach me at [alain.danet[at]inrae.fr](mailto:alain.danet@inrae.fr).
-
+Feel free to reach out at [emilio.egal@inrae.fr](mailto:emilio.egal@inrae.fr)
 :::
 
