@@ -275,6 +275,16 @@ format:
 
   <div class="timeline-item">
     <div class="timeline-dot"></div>
+    <div class="timeline-date">2026</div>
+    <div class="timeline-content">
+      <h3>SFE² Young Researcher Paper Award in Ecology &amp; Evolution — Doctoral Section</h3>
+      <p class="timeline-place">Société Française d'Écologie et d'Évolution (€750)</p>
+      <p>For <em>"Selection against dispersers: sex, age and origin-dependent fitness differences in wild Atlantic salmon"</em></p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-date">2025</div>
     <div class="timeline-content">
       <h3>Erasmus+ Mobility Grant</h3>
