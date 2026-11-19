@@ -22,9 +22,14 @@ about:
 
 Hello! I'm a PhD candidate in [DECOD lab](https://www.umr-decod.fr/en) at Rennes in France.
 
-My work sits at the intersection of evolutionary genetics, population genomics, and conservation biology — with Atlantic salmon (*Salmo salar*) as a model.
+My work sits at the intersection of evolutionary genetics, population genomics, and
+conservation biology. I use genetic tools to measure how dispersal and gene flow actually
+connect wild populations — currently in Atlantic salmon (*Salmo salar*), a diadromous
+migratory fish whose river populations are fragmented by dams and weirs. Before that I
+worked on cold-water corals, cetaceans and seabirds in marine and coastal systems.
 
-Outside the lab, you'll find me doing mostly sports: running 🏃 , going to the gym 🏋️, diving/snorkeling 🤿, hiking with a bivouac ⛺, or playing padel.🥎 
+Outside the lab, you'll find me doing mostly sports: running 🏃 , going to the gym 🏋️,
+diving/snorkeling 🤿, hiking with a bivouac ⛺, or playing padel.🥎 
 
 Feel free to reach out at [emilio.egal@inrae.fr](mailto:emilio.egal@inrae.fr)
 :::
